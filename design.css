@@ -1,0 +1,403 @@
+body{
+    background-color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*----------------PROFILE----------------*/
+.box_div{
+    margin-top: 80px;
+}
+
+.box_outer{
+    height: 395px;
+    width: 400px;
+    background: linear-gradient(blue, black);
+    opacity: 0;
+    margin: auto;
+    padding-top: 5px;
+    border-radius: 20%;
+    animation: rotate_outer 2s 0.5s 1 forwards;
+}
+
+.box_mid{
+    height: 384px;
+    width: 390px;
+    background-color: black;
+    margin: auto;
+    padding-top: 6px;
+    border-radius: 50%;
+}
+
+.box_inner{
+    height: 360px;
+    width: 375px;
+    background: linear-gradient (blue, pink);
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 0%;
+    animation: rotate_inner 2s 0s 1 forwards;
+}
+
+.box_core{
+    height: 365px;
+    width: 365px;
+    background-color: black;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.profile{
+    height: 320px;
+    margin-left: 25px;
+}
+
+.name{
+    position: absolute;
+    color: transparent;
+    margin-left: 117px;
+    margin-top: 270px;
+    font-family: teko;
+    font-size: 70px;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, blue, cyan);
+    background-clip: text;
+    opacity: 0;
+    animation: name 2s 1s 1 forwards;
+}
+
+.hey{
+    position: absolute;
+    color: white;
+    font-family: caveat;
+    font-size: 30px;
+    margin-top: 255px;
+    margin-left: 50px;
+    opacity: 0;
+    animation: name 2s 1s 1 forwards;
+}
+
+@keyframes name {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        color: white;
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate_outer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+        border-radius: 50%;
+        background: linear-gradient(blue, black);
+    }
+}
+
+@keyframes rotate_inner {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+        border-radius: 50%;
+        background: linear-gradient(black, blue, cyan);
+    }
+}
+
+/*----------------MENU----------------*/
+.menu_div{
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    margin-top: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    font-family: teko;
+    color: white;
+    border: double 6px rgb(67, 67, 67);
+    border-bottom-style: groove;
+    border-right-style: groove;
+    border-radius: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+    text-align: center;
+    transition: border 0.5s;
+    opacity: 0;
+    animation: button 2s 1s 1 forwards;
+}
+
+.button:hover{
+    border: double 6px blue;
+    color: white;
+}
+
+@keyframes button {
+    0%{
+
+    }
+    50%{
+        transform: scalex(1.2);
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.button1{
+    font-size: 20px;
+}
+
+/*----------------PORTFOLIO----------------*/
+.about_desc_div{
+    justify-content: center;
+    width: 70vw;
+    border-right: double 5px blue;
+    border-left: double 5px blue;
+    border-top: none;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about_desc{
+    color: rgb(205, 205, 205);
+    font-family: rubik;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+/*----------------PORTFOLIO----------------*/
+.menus2{
+    display: flex;
+    justify-content: right;
+    column-gap: 15px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.button2{
+    width: 55px;
+    font-size: 16px;
+    animation: button 1s 0.1s 1 forwards;
+}
+
+.my_portfolio{
+    position: absolute;
+    color: transparent;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 20px;
+    font-family: teko;
+    font-size: 60px;
+    font-weight: bold;
+    background-image: linear-gradient(white, black);
+    background-clip: text;
+    opacity: 0;
+    animation: my_portfolio 1s 0.1s 1 forwards;
+}
+
+@keyframes my_portfolio {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scaleX(1.1);
+        color: white;
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+/*----------------PORTFOLIO-BOX----------------*/
+.link{
+    text-decoration: none;
+}
+
+.portfolio_div{
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+    margin-top: 60px;
+    margin-bottom: 8%;
+}
+
+.portbox{
+    width: 22vw;
+    height: 24vw;
+    background-color: rgb(21, 21, 21);
+    border: double 5px rgb(21, 21, 21);
+    border-radius: 10px;
+    transition: border 0.8s;
+    opacity: 0;
+    animation: my_portfolio 1s 0.1s 1 forwards;
+}
+
+.portbox:hover{
+    border: double 5px blue;
+}
+
+@keyframes my_portfolio {
+    0%{
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.portbox_image{
+    width: 22vw;
+    height: 24vw;
+    border-radius: 10px;
+    opacity: 50%;
+    transition: opacity 0.5s;
+}
+
+.portbox_image:hover{
+    opacity: 100;
+}
+
+.portbox_label{
+    color: white;
+    font-family: teko;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*----------------PORTFOLIO-BOX-FILM----------------*/
+.clicked_div{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    justify-content: center;
+    column-gap: 15%;
+    opacity: 0;
+    animation: my_portfolio 1s 0.1s 1 forwards;
+}
+
+.clicked_desc_div{
+    margin-top: 4%;
+    border: double 6px blue;
+    border-radius: 50px;
+    height: 20vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.clicked_desc{
+    color: white;
+    font-family: teko;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    width: 30vw;
+    margin-top: 0;
+}
+
+.clicked{
+    width: 20vw;
+    height: 30vw;
+    background-color: none;
+    border-radius: 10px;
+    box-shadow: 1px 0px 20px 5px rgb(69, 69, 69);
+}
+
+.clicked_image{
+    height: 29vw;
+    margin-left: 3px;
+    margin-top: 4px;
+    border-radius: 10px;
+}
+
+/*----------------PORTFOLIO-BOX-PUBMAT----------------*/
+.clicked_div_all2{
+    display: flex;
+    justify-content: center;
+    column-gap: 10vw;
+    margin-top: 60px;
+    opacity: 0;
+    animation: my_portfolio 1s 0.1s 1 forwards;
+}
+
+.pubmat_image{
+    height: 26vw;
+    border-radius: 10px;
+    border: solid 2px grey;
+    border-bottom: none;
+    border-right: none;
+}
+
+.pubmat_desc{
+    color: white;
+    text-align: center;
+    font-family: teko;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/*----------------PORTFOLIO-BOX-WEBPAGE----------------*/
+.clicked_div_all3{
+    display: flex;
+    justify-content: center;
+    column-gap: 10vw;
+    margin-top: 60px;
+    opacity: 0;
+    animation: my_portfolio 1s 0.1s 1 forwards;
+}
+
+.clicked_div3{
+    display: flex;
+    justify-content: center;
+    column-gap: 5vw;
+}
+
+.webpage_image{
+    height: 26vw;
+    border-radius: 10px;
+    border: solid 2px grey;
+    border-bottom: none;
+    border-right: none;
+}
+
+
+.webpage_desc{
+    color: white;
+    text-align: center;
+    font-family: teko;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.video{
+    margin-top: 22%;
+    width: 20vw;
+    height: 14vw;
+    border-radius: 10px;
+    border: solid 2px rgb(85, 85, 85);
+    border-bottom: none;
+    border-right: none;
+}
