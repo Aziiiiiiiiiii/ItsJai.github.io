@@ -162,7 +162,7 @@ a{
     font-size: 20px;
 }
 
-/*----------------PORTFOLIO----------------*/
+/*----------------ABOUT----------------*/
 .about_desc_div{
     justify-content: center;
     width: 70vw;
@@ -174,8 +174,8 @@ a{
     margin-top: 180px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .about_desc{
@@ -184,6 +184,7 @@ a{
     font-size: 20px;
     text-align: center;
     margin: 0;
+    margin-left: 0;
 }
 
 
@@ -288,47 +289,45 @@ a{
 }
 
 /*----------------PORTFOLIO-BOX-FILM----------------*/
-.clicked_div{
-    display: flex;
-    margin-top: 60px;
-    margin-bottom: 100px;
+.clicked_div_all{
+    margin-top: 30px;
     justify-content: center;
-    column-gap: 15%;
-    opacity: 0;
-    animation: my_portfolio 1s 0.1s 1 forwards;
+    display: flex;
+    column-gap: 5%;
 }
 
-.clicked_desc_div{
-    margin-top: 4%;
-    border: double 6px blue;
-    border-radius: 50px;
-    height: 20vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.clicked_div{
+    opacity: 0;
+    animation: my_portfolio 1s 0.1s 1 forwards;
+    margin-bottom: 30px;
 }
 
 .clicked_desc{
     color: white;
-    font-family: teko;
-    font-size: 2vw;
-    letter-spacing: 2px;
+    font-family: rubik;
+    font-size: 10px;
+    letter-spacing: px;
     width: 30vw;
-    margin-top: 0;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3px;
 }
 
 .clicked{
-    width: 20vw;
-    height: 30vw;
+    width: 25vw;
+    height: 35vw;
     background-color: none;
     border-radius: 10px;
-    box-shadow: 1px 0px 20px 5px rgb(69, 69, 69);
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .clicked_image{
-    height: 29vw;
-    margin-left: 3px;
+    height: 35vw;
+    margin-left: 4px;
     margin-top: 4px;
     border-radius: 10px;
+    box-shadow: 1px 0px 20px 5px rgb(69, 69, 69);
 }
 
 /*----------------PORTFOLIO-BOX-PUBMAT----------------*/
@@ -339,6 +338,10 @@ a{
     margin-top: 60px;
     opacity: 0;
     animation: my_portfolio 1s 0.1s 1 forwards;
+}
+
+.clicked_div2{
+    text-align: center;
 }
 
 .pubmat_image{
@@ -369,7 +372,6 @@ a{
 }
 
 .clicked_div3{
-    display: flex;
     justify-content: center;
     column-gap: 5vw;
 }
@@ -390,14 +392,442 @@ a{
     font-size: 18px;
     letter-spacing: 1px;
     margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.buttonweb_div{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.buttonweb{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0;
+    border: none;
+    color: gray;
+    animation: my_portfolio 1s 0.1s 1 forwards;
+    transition: transform 0.8s;
+}
+
+.buttonweb:hover{
+    transform: scale(1.1);
+    border: none;
+    color: blue;
+}
+
+/*-----------PORTFOLIO-BOX-WEBPAGE-VIDEO--------------*/
+.video_div{
+    display: flex;
+    justify-content: center;
 }
 
 .video{
-    margin-top: 22%;
-    width: 20vw;
-    height: 14vw;
+    margin-top: 3%;
+    width: 40vw;
+    height: 30vw;
     border-radius: 10px;
-    border: solid 2px rgb(85, 85, 85);
     border-bottom: none;
     border-right: none;
 }
+
+
+/*----------------ANDROID-SIZE---------------*/
+/*------------------PROFILE------------------*/
+@media only screen and (max-width:500px) {
+    .box_outer{
+        height: 220px;
+        width: 220px;
+        background: linear-gradient(blue, black);
+        opacity: 0;
+        margin: auto;
+        margin-top: 30px;
+        padding-top: 5px;
+        border-radius: 20%;
+        animation: rotate_outer 2s 0.5s 1 forwards;
+    }
+        
+    .box_mid{
+        height: 210px;
+        width: 210px;
+        background-color: black;
+        margin: auto;
+        padding-top: 6px;
+        border-radius: 50%;
+    }
+    
+    .box_inner{
+        height: 190px;
+        width: 200px;
+        background: linear-gradient (blue, pink);
+        margin: auto;
+        padding-top: 10px;
+        border-radius: 0%;
+        animation: rotate_inner 2s 0s 1 forwards;
+    }
+    
+    .box_core{
+        height: 195px;
+        width: 190px;
+        background-color: black;
+        margin: auto;
+        border-radius: 50%;
+    }
+    
+    .profile{
+        height: 160px;
+        margin-left: 18px;
+    }
+    
+    .name{
+        position: absolute;
+        color: transparent;
+        margin-left: 60px;
+        margin-top: 150px;
+        font-family: teko;
+        font-size: 40px;
+        font-weight: bold;
+        background-image: linear-gradient(90deg, blue, cyan);
+        background-clip: text;
+        opacity: 0;
+        animation: name 2s 1s 1 forwards;
+    }
+    
+    .hey{
+        position: absolute;
+        color: white;
+        font-family: caveat;
+        font-size: 18px;
+        margin-top: 140px;
+        margin-left: 40px;
+        opacity: 0;
+        animation: name 2s 1s 1 forwards;
+    }
+
+    /*----------------MENU----------------*/
+    .menus1{
+        display: block;
+        margin-top: 40px;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    .button1{
+        font-family: teko;
+        font-size: 5px;
+        color: white;
+        border: double 3px rgb(67, 67, 67);
+        border-bottom-style: groove;
+        border-right-style: groove;
+        border-radius: 40px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 150px;
+        text-align: center;
+        transition: border 0.5s;
+        opacity: 0;
+        animation: button 2s 1s 1 forwards;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .button1:hover{
+        border: double 3px blue;
+        color: white;
+    }
+
+    @keyframes button {
+        0%{
+
+        }
+        50%{
+            transform: scalex(1.1);
+        }
+        100%{
+            opacity: 100;
+        }
+    }
+
+    .button1{
+        font-size: 20px;
+    }
+
+    /*----------------ABOUT----------------*/
+    .about_desc_div{
+        justify-content: center;
+        width: 30vw;
+        border-right: double 5px blue;
+        border-left: double 5px blue;
+        border-top: none;
+        border-radius: 50px;
+        margin: auto;
+        margin-top: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        opacity: 0;
+        animation: my_portfolio 1s 0.1s 1 forwards;
+    }
+
+    .about_desc{
+        color: rgb(205, 205, 205);
+        font-family: rubik;
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+        margin-left: 0;
+    }
+
+    /*----------------PORTFOLIO----------------*/
+    .menus2{
+        display: flex;
+        justify-content: right;
+        column-gap: 5px;
+        margin-right: 19%;
+    }
+
+    .button2{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        width: 32px;
+        font-size: 12px;
+        animation: button 1s 0.1s 1 forwards;
+    }
+
+    .my_portfolio{
+        position: absolute;
+        color: transparent;
+        text-align: left;
+        margin-top: 3px;
+        margin-left: 16%;
+        font-family: teko;
+        font-size: 30px;
+        font-weight: bold;
+        background-image: linear-gradient(white, black);
+        background-clip: text;
+        opacity: 0;
+        animation: my_portfolio 1s 0.1s 1 forwards;
+    }
+
+    @keyframes my_portfolio {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scaleX(1.1);
+            color: white;
+        }
+        100%{
+            opacity: 100%;
+            transform: scale(1);
+        }
+    }
+
+    /*----------------PORTFOLIO-BOX----------------*/
+    .link{
+        text-decoration: none;
+    }
+
+    .portfolio_div{
+        display: flex;
+        justify-content: center;
+        column-gap: 5%;
+        margin-top: 60px;
+        margin-bottom: 8%;
+    }
+
+    .portbox{
+        width: 22vw;
+        height: 24vw;
+        background-color: rgb(21, 21, 21);
+        border: double 5px rgb(21, 21, 21);
+        border-radius: 10px;
+        transition: border 0.8s;
+        opacity: 0;
+        animation: my_portfolio 1s 0.1s 1 forwards;
+    }
+
+    .portbox:hover{
+        border: double 5px blue;
+    }
+
+    @keyframes my_portfolio {
+        0%{
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    .portbox_image{
+        width: 22vw;
+        height: 24vw;
+        border-radius: 10px;
+        opacity: 50%;
+        transition: opacity 0.5s;
+    }
+
+    .portbox_image:hover{
+        opacity: 100;
+    }
+
+    .portbox_label{
+        color: white;
+        font-family: teko;
+        font-size: 20px;
+        text-align: center;
+    }
+
+/*----------------PORTFOLIO-BOX-FILM----------------*/
+.clicked_div_all{
+    margin-top: 30px;
+    display: block;
+}
+
+.clicked_div{
+    opacity: 0;
+    animation: my_portfolio 1s 0.1s 1 forwards;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.clicked_desc{
+    color: white;
+    font-family: rubik;
+    font-size: 10px;
+    letter-spacing: px;
+    width: 30vw;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+.clicked{
+    width: 25vw;
+    height: 35vw;
+    background-color: none;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.clicked_image{
+    height: 35vw;
+    margin-left: 4px;
+    margin-top: 4px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 20px 5px rgb(69, 69, 69);
+}
+
+    /*----------------PORTFOLIO-BOX-PUBMAT----------------*/
+    .clicked_div_all2{
+        display: block;
+        justify-content: center;
+        column-gap: 10vw;
+        margin-top: 30px;
+        opacity: 0;
+        animation: my_portfolio 1s 0.1s 1 forwards;
+    }
+
+    .clicked_div2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .pubmat_image{
+        height: 30vw;
+        border-radius: 10px;
+        border: solid 2px grey;
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .pubmat_desc{
+        color: white;
+        text-align: center;
+        font-family: rubik;
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+
+    /*----------------PORTFOLIO-BOX-WEBPAGE----------------*/
+    .clicked_div_all3{
+        display: flex;
+        justify-content: center;
+        column-gap: 10vw;
+        margin-top: 60px;
+        opacity: 0;
+        animation: my_portfolio 1s 0.1s 1 forwards;
+    }
+
+    .clicked_div3{
+        justify-content: center;
+        column-gap: 5vw;
+    }
+
+    .webpage_image{
+        height: 26vw;
+        border-radius: 10px;
+        border: solid 2px grey;
+        border-bottom: none;
+        border-right: none;
+    }
+
+
+    .webpage_desc{
+        color: white;
+        text-align: center;
+        font-family: teko;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .buttonweb_div{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .buttonweb{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin: 0;
+        border: none;
+        color: gray;
+        animation: my_portfolio 1s 0.1s 1 forwards;
+        transition: transform 0.8s;
+    }
+
+    .buttonweb:hover{
+        transform: scale(1.1);
+        border: none;
+        color: blue;
+    }
+
+    /*-----------PORTFOLIO-BOX-WEBPAGE-VIDEO--------------*/
+    .video_div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .video{
+        margin-top: 3%;
+        width: 40vw;
+        height: 30vw;
+        border-radius: 10px;
+        border-bottom: none;
+        border-right: none;
+    }
+
+
+
+    
+}
+
