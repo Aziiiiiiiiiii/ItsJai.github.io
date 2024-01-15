@@ -558,7 +558,7 @@ a{
     /*----------------ABOUT----------------*/
     .about_desc_div{
         justify-content: center;
-        width: 65vw;
+        width: 70vw;
         border-right: double 5px blue;
         border-left: double 5px blue;
         border-top: none;
@@ -567,8 +567,8 @@ a{
         margin-top: 100px;
         padding-top: 20px;
         padding-bottom: 20px;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 3vw;
+        padding-right: 3vw;
         opacity: 0;
         animation: my_portfolio 1s 0.1s 1 forwards;
     }
@@ -576,7 +576,7 @@ a{
     .about_desc{
         color: rgb(205, 205, 205);
         font-family: rubik;
-        font-size: 14px;
+        font-size: 4vw;
         text-align: center;
         margin: 0;
     }
